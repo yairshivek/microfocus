@@ -14,7 +14,7 @@ namespace LightSwitchDemo
 
        //public ISwitableDevice device{get; set;}
        //public  List<ISwitableDevice> devices{get; set;}
-       public OnSwitchChanged onSwitchChanged;
+       public event OnSwitchChanged onSwitchChanged;
 
        public SwitchDevice()
        {

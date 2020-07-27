@@ -19,7 +19,9 @@ namespace LightSwitchDemo
             // s.devices.Add(l1);
             // s.devices.Remove(l1);
 
-            s.onSwitchChanged = l1.OnSwitchChanged;
+            s.onSwitchChanged += l1.OnSwitchChanged;
+            s.onSwitchChanged += l2.OnSwitchChanged;
+          
 
             s.Flip();
             s.Flip();
