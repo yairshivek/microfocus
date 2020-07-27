@@ -1,0 +1,13 @@
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.exe
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.deps.json
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.runtimeconfig.json
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.runtimeconfig.dev.json
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.dll
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\bin\Debug\netcoreapp3.1\LightSwitchDemo.pdb
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.csprojAssemblyReference.cache
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.AssemblyInfoInputs.cache
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.AssemblyInfo.cs
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.csproj.CoreCompileInputs.cache
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.dll
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.pdb
+C:\works\jbt\microfocus\CLASS-20200727\LightSwitchDemo\obj\Debug\netcoreapp3.1\LightSwitchDemo.genruntimeconfig.cache
