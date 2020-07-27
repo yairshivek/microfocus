@@ -12,11 +12,14 @@ namespace LightSwitchDemo
             
             // connect Device to switch ...
             //s.device = l1;
-            s.devices.Add(l1);
-            s.devices.Add(l2);
-            s.devices.Add(l1);
-            s.devices.Remove(l1);
 
+            // work with a collection
+            // s.devices.Add(l1);
+            // s.devices.Add(l2);
+            // s.devices.Add(l1);
+            // s.devices.Remove(l1);
+
+            s.onSwitchChanged = l1.OnSwitchChanged;
 
             s.Flip();
             s.Flip();

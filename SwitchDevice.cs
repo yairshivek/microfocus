@@ -5,17 +5,20 @@ using System.Collections.Generic;
 namespace LightSwitchDemo
 {
     
+    public delegate void OnSwitchChanged(SwitchPosition switchPosition);
+    
     public enum SwitchPosition{Up, Down}
     public class SwitchDevice
     {
        private SwitchPosition _switchPosition; 
 
        //public ISwitableDevice device{get; set;}
-       public  List<ISwitableDevice> devices{get; set;}
+       //public  List<ISwitableDevice> devices{get; set;}
+       public OnSwitchChanged onSwitchChanged;
 
        public SwitchDevice()
        {
-            devices = new List<ISwitableDevice>();           
+            //devices = new List<ISwitableDevice>();           
        } 
 
        public void Flip(){
@@ -31,10 +34,13 @@ namespace LightSwitchDemo
         //    if (device != null){
         //         device.OnSwitchChanged(_switchPosition);
         //    }
-            foreach (var device in devices)
-            {
-                 device.OnSwitchChanged(_switchPosition);
-            }
+          //   foreach (var device in devices)
+          //   {
+          //        device.OnSwitchChanged(_switchPosition);
+          //   }
+               if (onSwitchChanged != null){
+                    onSwitchChanged(_switchPosition);
+               }
            
        }
     }
