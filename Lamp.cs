@@ -8,7 +8,7 @@ namespace LightSwitchDemo
         void OnSwitchChanged(SwitchPosition switchPosition);
     }
 
-    public class Lamp : ISwitableDevice
+    public class Lamp: ISwitableDevice
     {
         private bool _lightIsOn;
         public string Name { get; set; }

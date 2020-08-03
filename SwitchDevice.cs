@@ -5,6 +5,7 @@ using System.Collections.Generic;
 namespace LightSwitchDemo
 {
     
+    // define your delegete
     public delegate void OnSwitchChanged(SwitchPosition switchPosition);
     
     public enum SwitchPosition{Up, Down}
@@ -12,14 +13,27 @@ namespace LightSwitchDemo
     {
        private SwitchPosition _switchPosition; 
 
-       //public ISwitableDevice device{get; set;}
+       //public ISwitableDevice device {get; set;}
        //public  List<ISwitableDevice> devices{get; set;}
-       public event OnSwitchChanged onSwitchChanged;
+       
+       
+       // add your delegate as a member
+       //public  OnSwitchChanged onSwitchChanged;
+        
+        // define as an event. nice spark icon & force to use += 
+        public event OnSwitchChanged onSwitchChanged;
 
-       public SwitchDevice()
-       {
-            //devices = new List<ISwitableDevice>();           
-       } 
+          //   public SwitchDevice()
+          //   {
+          //        //devices = new List<ISwitableDevice>();           
+          //   } 
+
+
+          // you maty force a deleget on instanciation
+          //   public SwitchDevice(OnSwitchChanged onSwitchChanged)
+          //   {
+          //      this._onSwitchChanged = onSwitchChanged;       
+          //   } 
 
        public void Flip(){
             if (_switchPosition == SwitchPosition.Down){
@@ -31,16 +45,18 @@ namespace LightSwitchDemo
             }
             System.Console.WriteLine("Switch is {0}", _switchPosition);  
            // talk to the OnSwitchChanged of the Device  
-        //    if (device != null){
-        //         device.OnSwitchChanged(_switchPosition);
-        //    }
+           //if (devices != null){
+                //device.OnSwitchChanged(_switchPosition);
+           //}
           //   foreach (var device in devices)
           //   {
           //        device.OnSwitchChanged(_switchPosition);
           //   }
-               if (onSwitchChanged != null){
+
+          // invoke
+          if (onSwitchChanged != null){
                     onSwitchChanged(_switchPosition);
-               }
+          }
            
        }
     }
